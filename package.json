@@ -1,0 +1,21 @@
+{
+  "name": "test-platform",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "fs": "^0.0.1-security",
+    "generate-password": "^1.7.0",
+    "path": "^0.12.7",
+    "puppeteer": "^19.7.2",
+    "random-country-name": "^1.0.3",
+    "random-name": "^0.1.2"
+  }
+}
