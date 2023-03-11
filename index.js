@@ -113,7 +113,7 @@ async function main() {
     //gets elementHandle, and first types it
     const input = await page.$(".contValue > input");
     for (let x = 0; x < randoAmount; x++) {
-      const random = Math.floor(Math.random() * values.length - 1);
+      const random = Math.floor(Math.random() * (values.length - 1));
       await input.type(values[random].label);
       await page.waitForTimeout(1000);
       await page.waitForSelector(".col.menu > li > .btn.s");
@@ -180,6 +180,11 @@ async function main() {
   await page.click("button.btn.bg.primary");
   console.log("All passed ")
 
+    //   const pathing = path.join(process.cwd(), "data", "Seniority.csv");
+    // const values = await readcsv(pathing);
+    // for(let x =0;x<values.length;x++){
+    //   console.log(values[x].label)
+    // }
 }
 main();
 //https://becrosspath.com/hub/seniorities
